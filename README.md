@@ -49,25 +49,28 @@ As it is impossible to visualize things in more than 3D, we will reduce the dime
 
 5. Using Pandas's corr(), we can figure out correlation between columns to predict average_rating. 
 
-id                      0.304201
-yearpublished           0.108461
-minplayers             -0.032701
-maxplayers             -0.008335
-playingtime             0.048994
-minplaytime             0.043985
-maxplaytime             0.048994
-minage                  0.210049
-users_rated             0.112564
-average_rating          1.000000
-bayes_average_rating    0.231563
-total_owners            0.137478
-total_traders           0.119452
-total_wanters           0.196566
-total_wishers           0.171375
-total_comments          0.123714
-total_weights           0.109691
-average_weight          0.351081
-Name: average_rating, dtype: float64
+--------------------------------------
+| id              |         0.304201 | 
+| yearpublished   |         0.108461 | 
+| minplayers      |        -0.032701 | 
+| maxplayers      |        -0.008335 | 
+| playingtime     |         0.048994 | 
+| minplaytime     |         0.043985 | 
+| maxplaytime     |         0.048994 | 
+| minage          |         0.210049 | 
+| users_rated     |         0.112564 | 
+| average_rating  |         1.000000 | 
+| bayes_average_rating |    0.231563 | 
+| total_owners    |         0.137478 | 
+| total_traders   |         0.119452 | 
+| total_wanters   |         0.196566 | 
+| total_wishers   |         0.171375 | 
+| total_comments  |         0.123714 | 
+| total_weights   |         0.109691 | 
+| average_weight  |         0.351081 | 
+Name: average_rating, dtype: float64 
+
+----------------------------------------
 
 
 the average_weight and id columns correlate best to rating. ids are presumably assigned when the game is added to the database, so this likely indicates that games created later score higher in the ratings. average_weight indicates the "depth" or complexity of a game, so it may be that more complex games are reviewed better.
