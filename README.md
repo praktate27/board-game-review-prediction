@@ -49,7 +49,7 @@ As it is impossible to visualize things in more than 3D, we will reduce the dime
 
 5. Using Pandas's corr(), we can figure out correlation between columns to predict average_rating. 
 
---------------------------------------
+
 | id              |         0.304201 | 
 | yearpublished   |         0.108461 | 
 | minplayers      |        -0.032701 | 
@@ -69,9 +69,6 @@ As it is impossible to visualize things in more than 3D, we will reduce the dime
 | total_weights   |         0.109691 | 
 | average_weight  |         0.351081 | 
 Name: average_rating, dtype: float64 
-
-----------------------------------------
-
 
 the average_weight and id columns correlate best to rating. ids are presumably assigned when the game is added to the database, so this likely indicates that games created later score higher in the ratings. average_weight indicates the "depth" or complexity of a game, so it may be that more complex games are reviewed better.
 
