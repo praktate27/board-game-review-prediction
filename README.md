@@ -24,21 +24,21 @@ The dataset is from BoardGameGeek, and contains data on 80000 board games. It is
 After plotting a histogram of column "average_rating", we can see that there are quite few games with a '0' ratings. There's a fairly normal distribution of ratings, with some right skew, and a mean rating around '6' (if zero is removed).
 
 3. In order to find difference between '0' avg reviews and non-zero avg reviews, we will print data of respective and output will be as follow:
-* id                             318
-* type                     boardgame
-* name                    Looney Leo
-* users_rated                      0
-* average_rating                   0
-* bayes_average_rating             0
+* id  -->                           318
+* type -->                    boardgame
+* name  -->                  Looney Leo
+* users_rated  -->                    0
+* average_rating  -->                 0
+* bayes_average_rating -->            0
 
 Name: 13048, dtype: object
 
-* id                                  12333
-* type                            boardgame
-* name                    Twilight Struggle
-* users_rated                         20113
-* average_rating                    8.33774
-* bayes_average_rating              8.22186
+* id   -->                               12333
+* type  -->                          boardgame
+* name  -->                  Twilight Struggle
+* users_rated -->                        20113
+* average_rating -->                   8.33774
+* bayes_average_rating -->             8.22186
 
 Name: 0, dtype: object
 
@@ -52,24 +52,24 @@ As it is impossible to visualize things in more than 3D, we will reduce the dime
 5. Using Pandas's corr(), we can figure out correlation between columns to predict average_rating. 
 
 
-* id                          0.304201 
-* yearpublished               0.108461  
-* minplayers                 -0.032701  
-* maxplayers                 -0.008335  
-* playingtime                 0.048994  
-* minplaytime                 0.043985  
-* maxplaytime                 0.048994  
-* minage                      0.210049  
-* users_rated                 0.112564  
-* average_rating              1.000000  
-* bayes_average_rating        0.231563  
-* total_owners                0.137478  
-* total_traders               0.119452  
-* total_wanters               0.196566  
-* total_wishers               0.171375  
-* total_comments              0.123714  
-* total_weights               0.109691  
-* average_weight              0.351081  
+* id    -->                      0.304201 
+* yearpublished   -->            0.108461  
+* minplayers         -->        -0.032701  
+* maxplayers            -->     -0.008335  
+* playingtime      -->           0.048994  
+* minplaytime      -->           0.043985  
+* maxplaytime      -->           0.048994  
+* minage           -->           0.210049  
+* users_rated      -->           0.112564  
+* average_rating   -->           1.000000  
+* bayes_average_rating -->       0.231563  
+* total_owners         -->       0.137478  
+* total_traders        -->       0.119452  
+* total_wanters         -->      0.196566  
+* total_wishers         -->      0.171375  
+* total_comments        -->      0.123714  
+* total_weights           -->    0.109691  
+* average_weight       -->       0.351081  
 
 Name: average_rating, dtype: float64 
 
