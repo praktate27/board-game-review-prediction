@@ -31,7 +31,7 @@ users_rated                      0
 average_rating                   0
 bayes_average_rating             0
 Name: 13048, dtype: object
-================================================
+
 id                                  12333
 type                            boardgame
 name                    Twilight Struggle
@@ -48,7 +48,7 @@ As most of ML algorithms does not use text data, we will removew type and name c
 As it is impossible to visualize things in more than 3D, we will reduce the dimensionality of our data by using PCA (Principale Component Analysis). PCA takes multiple columns, and turns them into fewer columns while trying to preserve the unique information in each column. To simplify, say we have two columns, total_owners, and total_traders. There is some correlation between these two columns, and some overlapping information. PCA will compress this information into one column with new numbers while trying not to lose any information.
 
 5. Using Pandas's corr(), we can figure out correlation between columns to predict average_rating. 
----------------------------------
+
 id                      0.304201
 yearpublished           0.108461
 minplayers             -0.032701
@@ -68,7 +68,7 @@ total_comments          0.123714
 total_weights           0.109691
 average_weight          0.351081
 Name: average_rating, dtype: float64
--------------------------------------
+
 
 the average_weight and id columns correlate best to rating. ids are presumably assigned when the game is added to the database, so this likely indicates that games created later score higher in the ratings. average_weight indicates the "depth" or complexity of a game, so it may be that more complex games are reviewed better.
 
